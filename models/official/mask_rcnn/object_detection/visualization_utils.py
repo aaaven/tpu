@@ -160,7 +160,7 @@ def draw_bounding_box_on_image(image,
     use_normalized_coordinates: If True (default), treat coordinates
       ymin, xmin, ymax, xmax as relative to the image.  Otherwise treat
       coordinates as absolute.
-  """
+  
   draw = ImageDraw.Draw(image)
   im_width, im_height = image.size
   if use_normalized_coordinates:
@@ -200,7 +200,7 @@ def draw_bounding_box_on_image(image,
         fill='black',
         font=font)
     text_bottom -= text_height - 2 * margin
-
+  """
 
 def draw_bounding_boxes_on_image_array(image,
                                        boxes,
